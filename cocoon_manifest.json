@@ -1,0 +1,24 @@
+{
+  "project_name": "cocoon_alpha",
+  "version": "0.1.0",
+  "larvae": [
+    {
+      "name": "larva_scraper_0",
+      "larva_type": "scraper",
+      "task": "Subtask 1",
+      "status": "larva",
+      "pid": null,
+      "output_dir": null
+    },
+    {
+      "name": "larva_scraper_1",
+      "larva_type": "scraper",
+      "task": "Subtask 2",
+      "status": "larva",
+      "pid": null,
+      "output_dir": null
+    }
+  ],
+  "state": "egg",
+  "last_metamorphosis": null
+}

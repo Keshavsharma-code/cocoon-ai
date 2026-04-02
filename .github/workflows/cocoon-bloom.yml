@@ -1,0 +1,23 @@
+name: Cocoon Bloom (Self-Improvement)
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Nightly
+  workflow_dispatch:
+
+jobs:
+  bloom:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+    - name: Run Bloom Engine
+      run: cocoon bloom --task "Optimize hatchery logic" --generations 1
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "🦋 Swarm Metamorphosis: Bloom Cycle Completed"
+        title: "Bloom Update: Self-Improved DNA"
+        body: "Autonomous improvement cycle completed. Verification gates passed."

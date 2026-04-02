@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "crates/cocoon-cli",
+    "crates/nectar",
+    "crates/hive",
+    "crates/antennae",
+    "crates/metamorphosis",
+    "crates/instinct",
+    "crates/wings",
+    "crates/web",
+]
+resolver = "2"

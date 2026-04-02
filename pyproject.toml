@@ -1,0 +1,21 @@
+[project]
+name = "cocoon-ai"
+version = "0.1.0"
+description = "A self-replicating agent network based on the Infinite Agent Swarm architecture."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "rich",
+    "click",
+    "pydantic",
+    "openai",
+    "anthropic",
+]
+
+[project.scripts]
+cocoon = "cocoon.src.mother:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
